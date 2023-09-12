@@ -1,30 +1,17 @@
-
-/*
-$(document).ready(function(){
-
-  $("#navbar-home").click(home);
-  $("#dropdown-notebooks").click(notebooks);
-  $("#dropdown-desktops").click(desktops);
-  $("#dropdown-servers").click(servers);
-  $("#dropdown-softwares").click(softwares);
-
-});*/
 (function(){
   console.log("Loading header.js")
 
-  document.addEventListener("DOMContentLoaded",function (){
+ $(document).on('click', '.dropdown-item', function() {
 
   $("#navbar-home").click(home);
   $("#dropdown-notebooks").click(notebooks);
   $("#dropdown-desktops").click(desktops);
   $("#dropdown-servers").click(servers);
   $("#dropdown-softwares").click(softwares);
-
-
-
+  
 });
 
-  
+
   function home(){
   $dc.inserir_snippet('main','html/snippet/home.html');
   console.log("home clicked and loaded");
@@ -47,6 +34,8 @@ $(document).ready(function(){
     alert("softwares clicked!")
   }
 
-})()
+
+
+})();
 
 
