@@ -20,7 +20,15 @@
     }
 
     if(clickEvent.target.contains(document.getElementById("dropdown-softwares")) ){
-      servers();
+      softwares();
+    }
+
+    if(clickEvent.target.contains(document.getElementById("nav-item-services")) ){
+      services();
+    }
+
+    if(clickEvent.target.contains(document.getElementById("nav-item-locations")) ){
+      locations();
     }
   }) //endof $(document).on('click', function()
 
@@ -32,19 +40,29 @@ console.log("snippet home loaded");
   
 function notebooks(){
     $dc.inserir_snippet('main','html/snippet/products-notebooks.html');
-    console.log("notebooks clicked and loaded");
+    console.log("snippet notebooks loaded");
 }
 
 function desktops(){
-    alert("desktop clicked!")
+    $dc.inserir_snippet('main','html/snippet/products-desktops.html');
+    console.log("snippet desktop loaded");
 }
 
 function servers(){
-  alert("servers clicked!")
+  $dc.inserir_snippet('main','html/snippet/products-servers.html');
+    console.log("snippet servers loaded");
 }
 
-function softwares(){
-  alert("softwares clicked!")
+function services(){
+  //$dc.inserir_snippet('main','html/snippet/services.html');
+    console.log("snippet services loaded");
+    alert("services clicked!");
+}
+
+function locations(){
+  //$dc.inserir_snippet('main','html/snippet/locations.html');
+    console.log("snippet locations loaded");
+    alert("services clicked!");
 }
 
    

@@ -42,20 +42,23 @@
 
 
 
-.notebooks_item{
+.notebooks_item , .desktops_item , .servers_item {
 	display: flex; 
   align-items: center; 
 
 }
 
-.notebooks_item > .info {
+.notebooks_item > .info , .desktops_item > .info , .servers_item > .info {
 flex: 2;
 font-size: 12px;
 }
 
-.notebooks_item > img {
+.notebooks_item > img , .desktops_item > img , .servers_item > img{
 	flex: 1 ;
 	margin-left: 10px;
+	width: 108px; 
+	height: 80px;
+	object-fit: cover;
 	
 }
 
