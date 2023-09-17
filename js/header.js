@@ -27,23 +27,8 @@
 function home(){
 $dc.inserir_snippet('main','html/snippet/home.html');
 console.log("snippet home loaded");
-runCarousel();
-
 
 }
-
-//function runCarousel(){ $('#main_carousel').carousel(); console.log("works")}
-function runCarousel(){  var mainCarousel = $('#main_carousel');
-  if (mainCarousel.length > 0) {
-    mainCarousel.on('load.bs.carousel', function() {
-      mainCarousel.carousel();
-      console.log("Carousel iniciado");
-    });
-  } else {
-    console.log("#main_carousel não foi encontrado");
-  }
-}
-
   
 function notebooks(){
     $dc.inserir_snippet('main','html/snippet/products-notebooks.html');

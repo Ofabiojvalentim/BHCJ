@@ -42,6 +42,23 @@
 
 
 
+.notebooks_item{
+	display: flex; 
+  align-items: center; 
+
+}
+
+.notebooks_item > .info {
+flex: 2;
+font-size: 12px;
+}
+
+.notebooks_item > img {
+	flex: 1 ;
+	margin-left: 10px;
+	
+}
+
 body{
 	font-family: 'Comme', sans-serif;
 	color: #F9CD5E !important;
@@ -56,14 +73,14 @@ div > ul{
 
 .zoom {
   padding: 50px;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
   width: 200px;
   height: 200px;
   margin: 0 auto;
 }
 
 .zoom:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.25);
 }
 
 
