@@ -30,6 +30,10 @@
     if(clickEvent.target.contains(document.getElementById("nav-item-locations")) ){
       locations();
     }
+
+    if(clickEvent.target.contains(document.getElementById("nav-item-contact")) ){
+      contact();
+    }
   }) //endof $(document).on('click', function()
 
 function home(){
@@ -56,13 +60,16 @@ function servers(){
 function services(){
   $dc.inserir_snippet('main','html/snippet/services.html');
     console.log("snippet services loaded");
-    
 }
 
 function locations(){
-  //$dc.inserir_snippet('main','html/snippet/locations.html');
+  $dc.inserir_snippet('main','html/snippet/locations.html');
     console.log("snippet locations loaded");
-    alert("services clicked!");
+}
+
+function contact(){
+  $dc.inserir_snippet('main','html/snippet/contact.html');
+    console.log("snippet contact loaded");
 }
 
    
