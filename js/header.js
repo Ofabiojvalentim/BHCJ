@@ -57,6 +57,11 @@ function servers(){
     console.log("snippet servers loaded");
 }
 
+function softwares(){
+  $dc.inserir_snippet('main','html/snippet/products-softwares.html');
+    console.log("snippet softwares loaded");
+}
+
 function services(){
   $dc.inserir_snippet('main','html/snippet/services.html');
     console.log("snippet services loaded");

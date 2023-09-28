@@ -42,7 +42,7 @@
 
 
 
-.notebooks_item , .desktops_item , .servers_item {
+.notebooks_item , .desktops_item , .servers_item,  {
 	display: flex; 
   align-items: center; 
 
